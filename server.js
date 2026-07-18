@@ -16,6 +16,14 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static frontend assets from the root workspace
 app.use(express.static(__dirname));
 
+app.get('/style.css', (req, res) => {
+    res.sendFile(path.join(__dirname, 'style.css'));
+});
+
+app.get('/main.js', (req, res) => {
+    res.sendFile(path.join(__dirname, 'main.js'));
+});
+
 // Transporter variable to be initialized
 let transporter = null;
 let isEtherealFallback = false;
@@ -204,10 +212,14 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Launch Server listener
-app.listen(PORT, () => {
-    console.log(`=============================================================`);
-    console.log(` Vardhaman Ventures Backend running on http://localhost:${PORT}`);
-    console.log(` Serving landing page from: ${__dirname}`);
-    console.log(`=============================================================`);
-});
+// Launch Server listener only when running locally
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`=============================================================`);
+        console.log(` Vardhaman Ventures Backend running on http://localhost:${PORT}`);
+        console.log(` Serving landing page from: ${__dirname}`);
+        console.log(`=============================================================`);
+    });
+}
+
+module.exports = app;
