@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhaman Ventures | Real Estate Consulting Firm in Pune</title>
+    <meta name="description"
+        content="Your trusted real estate consultants in Pune. Over 6 years of experience helping home buyers & investors. Zero brokerage on partner projects, professional & transparent advice.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="glass-nav" id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo-area" id="admin-trigger">
+                <div class="logo-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                <div class="logo-text">
+                    <span class="brand-title">VARDHAMAN</span>
+                    <span class="brand-subtitle">VENTURES</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item active">Home</a>
+                <a href="#finder" class="nav-item">Property Matcher</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#projects" class="nav-item">Latest Projects</a>
+                <a href="#areas" class="nav-item">Areas We Serve</a>
+                <a href="#builders" class="nav-item">Developers</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:9860500759" class="btn btn-secondary call-action-btn">
+                    <i class="fa-solid fa-phone"></i> +91 98605 00759
+                </a>
+                <a href="#contact" class="btn btn-primary nav-cta">Get Consultation</a>
+                <!-- Mobile Toggle button -->
+                <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobile-menu">
+            <a href="#hero" class="mobile-nav-item">Home</a>
+            <a href="#finder" class="mobile-nav-item">Property Matcher</a>
+            <a href="#services" class="mobile-nav-item">Services</a>
+            <a href="#projects" class="mobile-nav-item">Latest Projects</a>
+            <a href="#areas" class="mobile-nav-item">Areas We Serve</a>
+            <a href="#builders" class="mobile-nav-item">Developers</a>
+            <a href="#contact" class="mobile-nav-item btn btn-primary">Free Consultation</a>
+            <div class="mobile-nav-contact">
+                <p><i class="fa-solid fa-location-dot"></i> Suratwala Mark Plaza, Wakad, Pune</p>
+                <a href="tel:9860500759"><i class="fa-solid fa-phone"></i> 9860500759</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <i class="fa-solid fa-circle-check text-gold"></i> Trusted Pune Real Estate Partners
+                    </div>
+                    <h1 class="hero-title">
+                        Turning Your <span class="gradient-text">Dream Home</span> Into Reality With Trust
+                    </h1>
+                    <p class="hero-subtitle">
+                        Deep local expertise, zero brokerage on partner projects, and professional support from inquiry
+                        to possession.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#finder" class="btn btn-primary btn-lg">Find Your Property <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline btn-lg">Book Site Visit</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feat-item"><i class="fa-solid fa-briefcase text-gold"></i> 6+ Yrs Pune Experience
+                        </div>
+                        <div class="feat-item"><i class="fa-solid fa-percent text-gold"></i> Zero Buyer Brokerage</div>
+                        <div class="feat-item"><i class="fa-solid fa-shield-halved text-gold"></i> 100% Transparent
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Property Seek Widget -->
+                <div class="hero-widget-container" id="finder">
+                    <div class="finder-card glass-panel">
+                        <div class="finder-header">
+                            <span class="finder-header-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> SMART
+                                MATCHER</span>
+                            <h3>Property Recommendation Matcher</h3>
+                            <p>Select your preferences and find the perfect developers and locations in Pune matching
+                                your profile.</p>
+                        </div>
+                        <form id="property-finder-form" class="finder-form">
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="find-location"><i class="fa-solid fa-location-dot"></i> Preferred
+                                        Location</label>
+                                    <select id="find-location" required>
+                                        <option value="any">Any Prime Location</option>
+                                        <option value="wakad">Wakad (Near IT/Expressway)</option>
+                                        <option value="hinjewadi">Hinjewadi (IT Hub)</option>
+                                        <option value="tathawade">Tathawade (Educational Hub)</option>
+                                        <option value="punawale">Punawale (Rapid Growth Zone)</option>
+                                        <option value="balewadi">Balewadi & Baner (Premium Living)</option>
+                                        <option value="bavdhan">Bavdhan & Sus (Serene/Scenic)</option>
+                                        <option value="ravet">Ravet & Pimpri (Smart Infrastructure)</option>
+                                        <option value="kothrud">Kothrud (Established/Cultural)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="find-bhk"><i class="fa-solid fa-bed"></i> Configuration (BHK)</label>
+                                    <select id="find-bhk" required>
+                                        <option value="any">Any Setup</option>
+                                        <option value="2bhk">2 BHK Apartment</option>
+                                        <option value="3bhk">3 BHK Premium</option>
+                                        <option value="4bhk">4 BHK / Luxury Penthouse</option>
+                                        <option value="investment">High ROI Investment Plots/Units</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="find-budget"><i class="fa-solid fa-indian-rupee-sign"></i> Budget
+                                        Range</label>
+                                    <select id="find-budget" required>
+                                        <option value="any">Any Budget</option>
+                                        <option value="under-60">Under ₹60 Lakhs (Affordable Premium)</option>
+                                        <option value="60-90">₹60 Lakhs - ₹90 Lakhs (Mid Segment)</option>
+                                        <option value="90-1.5Cr">₹90 Lakhs - ₹1.5 Crore (Premium Residential)</option>
+                                        <option value="above-1.5Cr">Above ₹1.5 Crore (Luxury Living)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="find-status"><i class="fa-solid fa-hourglass-half"></i> Possession
+                                        Timeline</label>
+                                    <select id="find-status" required>
+                                        <option value="any">Any Timeline</option>
+                                        <option value="ready">Ready to Move In</option>
+                                        <option value="near-completion">Under Construction (Within 1 Year)</option>
+                                        <option value="new-launch">New Launch / Pre-Launch Offers</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block finder-submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Match Developer & Projects
+                            </button>
+                        </form>
+                        <!-- Recommendations popup/pane -->
+                        <div id="matcher-results" class="matcher-results-box" style="display: none;">
+                            <div class="results-header">
+                                <h4><i class="fa-solid fa-square-poll-horizontal text-gold"></i> Personalized Matches
+                                    Found</h4>
+                                <button type="button" class="close-results-btn" id="close-results"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                            </div>
+                            <div id="results-list" class="results-list-wrapper">
+                                <!-- Populated dynamically by JS -->
+                            </div>
+                            <div class="results-footer">
+                                <a href="#contact" class="btn btn-secondary btn-sm" id="results-cta">Get Site Visit
+                                    Arrangements & Group Discounts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container container-sm grid grid-4">
+                <div class="stat-card" data-aos="fade-up">
+                    <span class="stat-number" data-target="6">6+</span>
+                    <span class="stat-label">Years Real Estate Excellence</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-delay="100">
+                    <span class="stat-number" data-target="500">500+</span>
+                    <span class="stat-label">Happy Families Served</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-delay="200">
+                    <span class="stat-number">0%</span>
+                    <span class="stat-label">Brokerage From Buyers</span>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-delay="300">
+                    <span class="stat-number" data-target="20">20+</span>
+                    <span class="stat-label">Reputed Builder Partners</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do / Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">WHAT WE DO</span>
+                    <h2>End-to-End Real Estate Services</h2>
+                    <p class="section-descr">At Vardhaman Ventures, we don't just sell properties. We act as your
+                        specialized family advisor, helping you navigate the entire journey safely.</p>
+                </div>
+
+                <div class="grid grid-3 card-group-services">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-panel-hover interactive-card" data-service="residential"
+                        style="cursor: pointer;">
+                        <div class="icon-holder circle-gradient">
+                            <i class="fa-solid fa-building-user"></i>
+                        </div>
+                        <h3>Residential Apartments</h3>
+                        <p>Access to handpicked projects offering 1, 2, and 3 BHK houses in Pune's fastest-growing
+                            residential hubs.</p>
+                        <ul class="srv-list">
+                            <li><i class="fa-solid fa-check text-green"></i> Budget-friendly setups</li>
+                            <li><i class="fa-solid fa-check text-green"></i> Top-tier building amenities</li>
+                        </ul>
+                        <div class="card-action-overlay-hint">Click to Find Projects <i
+                                class="fa-solid fa-circle-arrow-down"></i></div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-panel-hover highlight interactive-card" data-service="luxury"
+                        style="cursor: pointer;">
+                        <div class="icon-holder gold-gradient">
+                            <i class="fa-solid fa-chess-king"></i>
+                        </div>
+                        <div class="ribbon">Highly Demanded</div>
+                        <h3>Premium & Luxury Homes</h3>
+                        <p>Curated villas, penthouses, and signature estates which feature high architectural layouts
+                            and world-class luxury.</p>
+                        <ul class="srv-list">
+                            <li><i class="fa-solid fa-check"></i> High-security gated layouts</li>
+                            <li><i class="fa-solid fa-check"></i> State-of-the-art tech integrations</li>
+                        </ul>
+                        <div class="card-action-overlay-hint">Click to Find Projects <i
+                                class="fa-solid fa-circle-arrow-down"></i></div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-panel-hover interactive-card" data-service="investment"
+                        style="cursor: pointer;">
+                        <div class="icon-holder circle-gradient">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Investment Properties</h3>
+                        <p>High capital-appreciation flats and plots situated in prime expansion areas for guaranteed
+                            monthly returns.</p>
+                        <ul class="srv-list">
+                            <li><i class="fa-solid fa-check text-green"></i> Under-construction projects</li>
+                            <li><i class="fa-solid fa-check text-green"></i> In-depth market projection model</li>
+                        </ul>
+                        <div class="card-action-overlay-hint">Click to Find Projects <i
+                                class="fa-solid fa-circle-arrow-down"></i></div>
+                    </div>
+                </div>
+
+                <!-- Process Timeline Section -->
+                <div class="process-timeline container-sm">
+                    <h3 class="text-center timeline-heading">How We Assist You Throughout Your Home Buying Journey</h3>
+                    <div class="timeline-wrapper">
+                        <div class="timeline-step">
+                            <div class="step-num">1</div>
+                            <h4>Requirement Analysis</h4>
+                            <p>We analyze your budget, connectivity needs, family scale, and preferences.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-num">2</div>
+                            <h4>Property Shortlisting</h4>
+                            <p>We compile recommendations across Pune's top builder projects, skipping flawed units.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-num">3</div>
+                            <h4>Arranged Site Visits</h4>
+                            <p>Free private vehicle tours to multiple sites so you can check and compare structures.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-num">4</div>
+                            <h4>Negotiation & Booking</h4>
+                            <p>Leveraging our partner status, we negotiate the best deal and aid home loan approvals.
+                            </p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-num">5</div>
+                            <h4>Possession & Support</h4>
+                            <p>Aiding legal registrations and documentation right up to key handover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas We Serve -->
+        <section id="areas" class="areas-section section-padding-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle-badge">WHERE WE OPERATE</span>
+                    <h2>Explore Prime Real Estate Zones in Pune</h2>
+                    <p class="section-descr">Understanding micromarkets is critical. Here is a breakdown of core
+                        locations Vardhaman Ventures specializes in.</p>
+                </div>
+
+                <div class="area-explorer-grid">
+                    <!-- Area Selector Sidebar -->
+                    <div class="area-tabs-sidebar">
+                        <button class="area-tab-btn active" data-area="wakad">
+                            <span>Wakad</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="area-tab-btn" data-area="hinjewadi">
+                            <span>Hinjewadi</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="area-tab-btn" data-area="tathawade">
+                            <span>Tathawade / Punawale</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="area-tab-btn" data-area="baner">
+                            <span>Baner / Balewadi</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="area-tab-btn" data-area="bavdhan">
+                            <span>Bavdhan / Sus / Kothrud</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button class="area-tab-btn" data-area="ravet">
+                            <span>Ravet & Pimpri Area</span> <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Area Showcase Content Box -->
+                    <div class="area-showcase-panel glass-panel">
+                        <div class="area-content-node active" id="node-wakad">
+                            <div class="area-visual bg-wakad"></div>
+                            <div class="area-details">
+                                <span class="tag-status">Our Head Office Location</span>
+                                <h3>Wakad: Pune's Premium Residential Hotspot</h3>
+                                <p>Wakad has undergone rapid transformation into an upscale urban neighborhood. Its
+                                    immediate accessibility to the Mumbai-Bengaluru Expressway makes it a prime favorite
+                                    for working couples and families.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-train"></i> High connectivity to
+                                        Hinjewadi IT parks</div>
+                                    <div class="hl-item"><i class="fa-solid fa-graduation-cap"></i> Premier
+                                        international schools and hospitals</div>
+                                    <div class="hl-item"><i class="fa-solid fa-shop"></i> Minutes from Phoenix Mall of
+                                        the Millennium</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners in Wakad:</strong>
+                                    <div class="pills-container">
+                                        <span>ANP Corp</span><span>Vilas Javdekar</span><span>Kohinoor
+                                            Group</span><span>Austin Realty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="area-content-node" id="node-hinjewadi">
+                            <div class="area-visual bg-hinjewadi"></div>
+                            <div class="area-details">
+                                <span class="tag-status">High Rental Yields</span>
+                                <h3>Hinjewadi: The Silicon Valley of Pune</h3>
+                                <p>Pune's premiere IT/ITeS hub divided into Phase 1, 2, and 3. Perfect for rental yield
+                                    investments and tech professionals seeking walking distance commutes.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-briefcase"></i> Over 300+ Tech
+                                        multinationals</div>
+                                    <div class="hl-item"><i class="fa-solid fa-road"></i> Hinjewadi Metro Line progress
+                                        (Upcoming)</div>
+                                    <div class="hl-item"><i class="fa-solid fa-chart-line"></i> High appreciation rates
+                                        and tenant demand</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners in Hinjewadi:</strong>
+                                    <div class="pills-container">
+                                        <span>Godrej Properties</span><span>Kasturi
+                                            Housing</span><span>Kolte-Patil</span><span>VTP Realty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="area-content-node" id="node-tathawade">
+                            <div class="area-visual bg-tathawade"></div>
+                            <div class="area-details">
+                                <span class="tag-status">High Rental & Appreciation</span>
+                                <h3>Tathawade & Punawale: Education & Growth Zone</h3>
+                                <p>Highly affordable yet fast-rising hubs lying immediately adjacent to Hinjewadi and
+                                    Wakad, full of lush greenery and mega townships.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-graduation-cap"></i> Major colleges:
+                                        JSPM, DY Patil University</div>
+                                    <div class="hl-item"><i class="fa-solid fa-tag"></i> Premium flat sizes at
+                                        comparatively cheaper rates</div>
+                                    <div class="hl-item"><i class="fa-solid fa-circle-nodes"></i> Fast highway
+                                        accessibility</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners Here:</strong>
+                                    <div class="pills-container">
+                                        <span>Vilas Javdekar</span><span>Pharande Spaces</span><span>Siddhashila
+                                            Group</span><span>Yashada Realty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="area-content-node" id="node-baner">
+                            <div class="area-visual bg-baner"></div>
+                            <div class="area-details">
+                                <span class="tag-status">Premium & Luxury Zone</span>
+                                <h3>Baner & Balewadi: Cosmopolitan Living Standards</h3>
+                                <p>Upscale micro-markets with rich cultural hubs, dining options, and multi-tenant
+                                    luxury high-rises. Ideal for families wanting a central lifestyle.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-utensils"></i> Balewadi High Street
+                                        commercial strip</div>
+                                    <div class="hl-item"><i class="fa-solid fa-gem"></i> Premium lifestyle
+                                        configurations</div>
+                                    <div class="hl-item"><i class="fa-solid fa-city"></i> Smart City model integration
+                                        zone</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners in Baner/Balewadi:</strong>
+                                    <div class="pills-container">
+                                        <span>Pride Purple Group</span><span>Nyati Group</span><span>Kalpataru
+                                            Group</span><span>Gera Developments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="area-content-node" id="node-bavdhan">
+                            <div class="area-visual bg-bavdhan"></div>
+                            <div class="area-details">
+                                <span class="tag-status">Serene Residential</span>
+                                <h3>Bavdhan, Sus & Kothrud: Greenery & Legacy</h3>
+                                <p>Flanked by hills, Bavdhan & Sus offer scenic, pollution-free living while Kothrud
+                                    provides Pune's established cultural core values.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-tree"></i> Encircled by beautiful hills
+                                        and reserves</div>
+                                    <div class="hl-item"><i class="fa-solid fa-house-laptop"></i> Zero-traffic routes to
+                                        Kothrud & city center</div>
+                                    <div class="hl-item"><i class="fa-solid fa-shield"></i> Exceptionally peaceful
+                                        residential colonies</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners:</strong>
+                                    <div class="pills-container">
+                                        <span>Rohan Builders</span><span>Siddhi Ventures</span><span>Nyati
+                                            Group</span><span>Kumar Properties</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="area-content-node" id="node-ravet">
+                            <div class="area-visual bg-ravet"></div>
+                            <div class="area-details">
+                                <span class="tag-status">Smart Infrastructure</span>
+                                <h3>Ravet & Pimpri: Expressway Gateway</h3>
+                                <p>Ravet is the gateway to Pune-Mumbai Expressway. Fully planned sector infrastructure
+                                    with wide roads, great parks, and affordable modern gated communities.</p>
+
+                                <div class="area-highlights">
+                                    <div class="hl-item"><i class="fa-solid fa-bridge"></i> Wide concrete roads and
+                                        non-congested grids</div>
+                                    <div class="hl-item"><i class="fa-solid fa-train"></i> Close proximity to Akurdi &
+                                        Pimpri railway portals</div>
+                                    <div class="hl-item"><i class="fa-solid fa-industry"></i> Immediate proximity to
+                                        PCMC Industrial complexes</div>
+                                </div>
+                                <hr>
+                                <div class="area-builders">
+                                    <strong>Reputed Builder Partners in Ravet/PCMC:</strong>
+                                    <div class="pills-container">
+                                        <span>Pharande Spaces</span><span>VTP Realty</span><span>Lodha
+                                            Group</span><span>Lunkad / Kohinoor Group</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-section section-padding-dark text-white">
+            <div class="container container-sm">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge badge-gold">WHY VARDHAMAN VENTURES?</span>
+                    <h2>Guiding You To Your Correct Address</h2>
+                    <p class="section-descr text-muted">A home purchase represents your largest financial commitment. We
+                        ensure it's built on transparency and research-backed options.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h4>6+ Years Local Wisdom</h4>
+                        <p>We know every building layout, past site records, builder history, and local water/power
+                            infrastructure details in Pune.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-piggy-bank"></i></div>
+                        <h4>Absolute Zero Buyer Brokerage</h4>
+                        <p>Zero brokerage on all direct developer partner projects. All professional assistance comes at
+                            no cost to the buyer.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+                        <h4>Unbiased Property Comparisons</h4>
+                        <p>Unlike developers pushing a single site, we present multi-project comparison matrixes based
+                            on layouts, specs, and price.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <h4>Complete End-To-End Support</h4>
+                        <p>From arranging custom group site visits, banking loan rates approvals, direct builders
+                            negotiation, up to final registration desk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Partners Showcase Scroll -->
+        <section id="builders" class="builders-section section-padding-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">CREATIVE ALLIANCES</span>
+                    <h2>Working With Representative Developers</h2>
+                    <p class="section-descr">Access exclusive inventory, pre-sale discounts, and priority bookings with
+                        top building firms of Pune.</p>
+                </div>
+
+                <!-- Infinite Scroll Marquee -->
+                <div class="marquee-viewport">
+                    <div class="marquee-track">
+                        <!-- Logos/Brands (First Set) -->
+                        <div class="marquee-item"><span>ANP Corp</span></div>
+                        <div class="marquee-item"><span>Vilas Javdekar</span></div>
+                        <div class="marquee-item"><span>Kalpataru Group</span></div>
+                        <div class="marquee-item"><span>Nyati Group</span></div>
+                        <div class="marquee-item"><span>Rohan Builders</span></div>
+                        <div class="marquee-item"><span>Kasturi Housing</span></div>
+                        <div class="marquee-item"><span>Kohinoor Group</span></div>
+                        <div class="marquee-item"><span>Gera Developments</span></div>
+                        <div class="marquee-item"><span>Godrej Properties</span></div>
+                        <div class="marquee-item"><span>VTP Realty</span></div>
+                        <div class="marquee-item"><span>Siddhashila Group</span></div>
+                        <div class="marquee-item"><span>Lodha Group</span></div>
+                        <div class="marquee-item"><span>Mahindra Lifespaces</span></div>
+                        <div class="marquee-item"><span>Pride Purple</span></div>
+                        <div class="marquee-item"><span>Kolte-Patil</span></div>
+                        <!-- Duplicate Set for Continuous Loop -->
+                        <div class="marquee-item"><span>ANP Corp</span></div>
+                        <div class="marquee-item"><span>Vilas Javdekar</span></div>
+                        <div class="marquee-item"><span>Kalpataru Group</span></div>
+                        <div class="marquee-item"><span>Nyati Group</span></div>
+                        <div class="marquee-item"><span>Rohan Builders</span></div>
+                        <div class="marquee-item"><span>Kasturi Housing</span></div>
+                        <div class="marquee-item"><span>Kohinoor Group</span></div>
+                        <div class="marquee-item"><span>Gera Developments</span></div>
+                        <div class="marquee-item"><span>Godrej Properties</span></div>
+                        <div class="marquee-item"><span>VTP Realty</span></div>
+                        <div class="marquee-item"><span>Siddhashila Group</span></div>
+                        <div class="marquee-item"><span>Lodha Group</span></div>
+                        <div class="marquee-item"><span>Mahindra Lifespaces</span></div>
+                        <div class="marquee-item"><span>Pride Purple</span></div>
+                        <div class="marquee-item"><span>Kolte-Patil</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Latest Projects Section -->
+        <section id="projects" class="projects-section section-padding-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle-badge">FEATURED PROJECTS</span>
+                    <h2>Explore Latest Ongoing Projects in Pune</h2>
+                    <p class="section-descr">Direct access to premium layouts, developer configurations, and site visits
+                        arrangement for selected properties.</p>
+                </div>
+
+                <div class="grid grid-3 projects-gallery">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80');">
+                            <span class="project-badge status-launch">New Launch</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">ANP Corp</span>
+                            <h4>ANP Universe</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Wakad, Pune</p>
+                            <p class="p-details">Smart home systems, premium high-rise configurations, immediately
+                                adjacent to major schools & commercial centers.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-bed"></i> 2, 3 & 4 BHK</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 92 L onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="ANP Universe (Wakad)">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80');">
+                            <span class="project-badge status-construction">Under Construction</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">Godrej Properties</span>
+                            <h4>Godrej Woodsville</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Hinjewadi Phase 1, Pune</p>
+                            <p class="p-details">Lush forest-themed residential enclave, children facilities, walking
+                                distance to prime IT parks.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-bed"></i> 2 & 3 BHK</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 76 L onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="Godrej Woodsville (Hinjewadi)">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80');">
+                            <span class="project-badge status-ready">Ready To Move</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">Vilas Javdekar Developers</span>
+                            <h4>VJ Portia</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Wakad, Pune</p>
+                            <p class="p-details">Bespoke luxury residences, low density layouts, premium quality
+                                fixtures, and direct brand warranty seals.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-bed"></i> 3 & 4 BHK</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 1.45 Cr onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="VJ Portia (Wakad)">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80');">
+                            <span class="project-badge status-launch">Exclusive Investment</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">Siddhi Ventures</span>
+                            <h4>Vardhaman Golden Plots</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Bavdhan, Pune</p>
+                            <p class="p-details">Prime collector NA villa plots, gated layout with high ROI margins,
+                                direct road access, and clear legal titles.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-chart-line"></i> High ROI Plots</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 85 L onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="Vardhaman Golden Plots (Bavdhan)">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=600&q=80');">
+                            <span class="project-badge status-construction">Under Construction</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">Pride Purple Group</span>
+                            <h4>Park District</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Wakad-Hinjewadi Zone, Pune</p>
+                            <p class="p-details">Premium integrated mega township, world-class club amenities, direct
+                                highway and metro corridors access.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-bed"></i> 2 & 3 BHK</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 88 L onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="Pride Purple Park District">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card glass-panel-hover">
+                        <div class="project-img-wrapper"
+                            style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80'); background-position: center;">
+                            <span class="project-badge status-launch">Exclusive Investment</span>
+                        </div>
+                        <div class="project-body">
+                            <span class="p-developer">Kohinoor Group</span>
+                            <h4>Kohinoor Commercial Hub</h4>
+                            <p class="p-loc"><i class="fa-solid fa-location-dot"></i> Wakad, Pune</p>
+                            <p class="p-details">Pre-leased premium retail outlets and office suites, offering assured
+                                8% rental yield plus long-term appreciation.</p>
+                            <div class="p-specs">
+                                <span><i class="fa-solid fa-chart-line"></i> Assured Rental Yield</span>
+                                <span><i class="fa-solid fa-indian-rupee-sign"></i> 95 L onwards</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary btn-sm btn-block project-inquire-btn"
+                                data-project="Kohinoor Commercial Hub (Wakad)">Request Brochure & Layouts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Consultation Booking Form Section -->
+        <section id="contact" class="contact-section section-padding-dark text-white">
+            <div class="contact-bg-pattern"></div>
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Left Column: Info Panels -->
+                    <div class="contact-info-block">
+                        <div class="badge-pill badge-gold mb-3"><i class="fa-solid fa-clock"></i> Response in under 15
+                            minutes</div>
+                        <h2 class="title-premium">Schedule A Free Home Consultation & Site Tour</h2>
+                        <p class="descr-para text-muted">Fill out the questionnaire or connect directly over
+                            phone/WhatsApp to get custom recommendations matching your budget, lifestyle, and investment
+                            objectives.</p>
+
+                        <div class="contact-details-box">
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="txt-grp">
+                                    <span>Call our relationship team</span>
+                                    <a href="tel:9860500759">9860500759</a>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="txt-grp">
+                                    <span>Our Office Address</span>
+                                    <a href="https://maps.google.com/?q=Vardhaman+Ventures+Suratwala+Mark+Plaza+Wakad+Pune"
+                                        target="_blank">
+                                        Vardhaman Ventures, Suratwala Mark Plaza, Wakad, Pune, 411057
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="icon-circle"><i class="fa-solid fa-comments"></i></div>
+                                <div class="txt-grp">
+                                    <span>Instant WhatsApp Chat</span>
+                                    <a href="https://wa.me/919860500759?text=Hi%20Vardhaman%20Ventures,%20I%20am%20looking%20for%20a%20property%20consultation%20in%20Pune."
+                                        class="text-green" target="_blank">
+                                        <i class="fa-brands fa-whatsapp"></i> Chat Live Online
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.429676766487!2d73.7538258!3d18.5997235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b963a7bfddab%3A0xe5a1b32ded586bfa!2sSuratwala%20Mark%20Plaza!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Vardhaman Ventures Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Glass Form Card -->
+                    <div class="contact-form-block glass-panel">
+                        <h3 class="form-title">Consultation Request Desk</h3>
+                        <p class="form-subtitle">Submit details below to assign your dedicated Property Advisor.</p>
+
+                        <form id="inquiry-form" class="inquiry-form-tag">
+                            <div class="form-group-custom">
+                                <label for="user-name">Your Full Name <span class="req">*</span></label>
+                                <input type="text" id="user-name" name="name" placeholder="John Doe" required>
+                                <span class="error-msg-tag" id="err-name"></span>
+                            </div>
+
+                            <div class="form-double-group">
+                                <div class="form-group-custom">
+                                    <label for="user-phone">Mobile Number <span class="req">*</span></label>
+                                    <input type="tel" id="user-phone" name="phone" placeholder="98XXXXXXXX"
+                                        pattern="[6789][0-9]{9}" required
+                                        title="Please enter a valid 10-digit Indian phone number starting with 6, 7, 8 or 9">
+                                    <span class="error-msg-tag" id="err-phone"></span>
+                                </div>
+                                <div class="form-group-custom">
+                                    <label for="user-email">Email Address</label>
+                                    <input type="email" id="user-email" name="email" placeholder="example@mail.com">
+                                    <span class="error-msg-tag" id="err-email"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-double-group">
+                                <div class="form-group-custom">
+                                    <label for="user-loc">Target Location</label>
+                                    <select id="user-loc" name="location">
+                                        <option value="Wakad">Wakad</option>
+                                        <option value="Hinjewadi">Hinjewadi</option>
+                                        <option value="Tathawade">Tathawade</option>
+                                        <option value="Punawale">Punawale</option>
+                                        <option value="Baner">Baner / Balewadi</option>
+                                        <option value="Bavdhan">Bavdhan / Sus</option>
+                                        <option value="Kothrud">Kothrud Area</option>
+                                        <option value="Ravet">Ravet / PCMC</option>
+                                        <option value="Other">Other Area in Pune</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-custom">
+                                    <label for="user-budget">Budget Plan</label>
+                                    <select id="user-budget" name="budget">
+                                        <option value="Under 60 Lakhs">Under ₹60 Lakhs</option>
+                                        <option value="60 - 90 Lakhs" selected>₹60 Lakhs - ₹90 Lakhs</option>
+                                        <option value="90 Lakhs - 1.5 Cr">₹90 Lakhs - ₹1.5 Cr</option>
+                                        <option value="Above 1.5 Cr">Above ₹1.5 Cr</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group-custom">
+                                <label for="user-message">Short note on specifications</label>
+                                <textarea id="user-message" name="message" rows="3"
+                                    placeholder="Options: 2BHK near Hinjewadi, ready possession, higher floor balcony prefer..."></textarea>
+                            </div>
+
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="user-sitevisit" name="sitevisit" checked>
+                                <label for="user-sitevisit">Free site visit cab assistance required (Wakad, Pune
+                                    zone)</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block form-btn" id="submit-btn-loader">
+                                <span class="btn-text">Submit Request</span>
+                                <span class="btn-spinner" style="display: none;"><i
+                                        class="fa-solid fa-circle-notch fa-spin"></i> Submitting...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Actions Panel -->
+    <div class="floating-panel">
+        <a href="https://wa.me/919860500759?text=Hi%20Vardhaman%20Ventures,%20I'm%20visiting%20your%20landing%20page%20and%20interested%20in%20a%20new%20flat%20consultation."
+            class="float-wa-btn" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="btn-label-floating">Chat Now</span>
+        </a>
+        <a href="tel:9860500759" class="float-call-btn" aria-label="Call Direct Desk">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="modal-backdrop" id="thankyou-modal">
+        <div class="msg-modal glass-panel">
+            <div class="modal-decor"><i class="fa-solid fa-gift"></i></div>
+            <h2>Consultation Registered Successfully!</h2>
+            <p>Thank you for choosing <strong>Vardhaman Ventures</strong>. Your personal relationship manager will call
+                you within 15 minutes to short-list developers and schedule site visits.</p>
+            <div class="modal-summary">
+                <p><strong>Lead Assigned:</strong> Relationship Desk 1 (Pune West Portfolio)</p>
+                <p><strong>Hotline:</strong> 9860500759</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-block close-modal-btn" id="close-modal">Got it,
+                thanks!</button>
+        </div>
+    </div>
+
+    <!-- Admin Panel Backdoor Modal (Double click Logo) -->
+    <div class="modal-backdrop" id="admin-modal">
+        <div class="admin-modal-card glass-panel text-white">
+            <div class="admin-header">
+                <h3><i class="fa-solid fa-toolbox text-gold"></i> Vardhaman Ventures Inquiry Vault</h3>
+                <button type="button" class="close-admin-btn" id="close-admin"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="admin-intro-text">Displaying local consultation leads entered on this browser registry (offline
+                demonstration mode).</p>
+            <div class="admin-leads-wrapper">
+                <table class="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Lead Details</th>
+                            <th>Location & Budget</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-leads-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="admin-footer-btn-row">
+                <button type="button" class="btn btn-danger btn-sm" id="clear-leads-btn"><i
+                        class="fa-solid fa-trash-can"></i> Clear All Entries</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-block">
+        <div class="container grid grid-4">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="gold-text">VARDHAMAN</span> VENTURES
+                </div>
+                <p class="footer-tagline">"Turning Your Dream Home into Reality with Trust, Transparency & Expertise."
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/vardhaman.venture/" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919860500759" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Browse Features</h4>
+                <ul>
+                    <li><a href="#hero">Home Page</a></li>
+                    <li><a href="#finder">Property Matcher</a></li>
+                    <li><a href="#services">What We Do</a></li>
+                    <li><a href="#areas">Areas in Pune</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal & Info</h4>
+                <ul>
+                    <li><a href="#builders">Builder Partners</a></li>
+                    <li><a href="#projects">Latest Projects</a></li>
+                    <li><a href="#contact">Site Visit Cabin</a></li>
+                    <li><a href="#admin-trigger" class="secret-admin-link">Staff Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Wakad Office</h4>
+                <p><i class="fa-solid fa-map-marker-alt text-gold"></i> Suratwala Mark Plaza, Wakad, Pune, 411057</p>
+                <p><i class="fa-solid fa-phone text-gold"></i> <a href="tel:9860500759">9860500759</a></p>
+                <p><i class="fa-solid fa-envelope text-gold"></i> <a
+                        href="mailto:info@vardhamanventures.in">info@vardhamanventures.in</a></p>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer-stripe">
+            <div class="container">
+                <p>Disclaimer: Vardhaman Ventures is a real estate advisory firm in Pune. Logo trademarks and copyrights
+                    of developers displayed on this website belong to their respective corporations. RERA details of
+                    corresponding builder projects are verified prior to booking. We provide independent consultancy
+                    services.</p>
+                <p class="copy-text">&copy; 2026 Vardhaman Ventures Real Estate Consultants. Crafted with Care. All
+                    Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
