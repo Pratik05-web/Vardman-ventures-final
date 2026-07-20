@@ -14,14 +14,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static frontend assets from the root workspace
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname)));
 
-app.get('/style.css', (req, res) => {
-    res.sendFile(path.join(__dirname, 'style.css'));
-});
-
-app.get('/main.js', (req, res) => {
-    res.sendFile(path.join(__dirname, 'main.js'));
+// Prevent favicon 404 noise for browsers when no favicon file exists
+app.get('/favicon.ico', (req, res) => {
+    res.sendStatus(204);
 });
 
 // Transporter variable to be initialized
